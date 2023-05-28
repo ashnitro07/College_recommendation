@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+            body{
+                margin: 0px;
+            }
+            .background{
+                background-image: url("colg.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100vh;
+                width: 80%;
+            }
+            .white-box{
+                
+              padding-inline: 100px;
+                
+            }
+            .heading{
+                color: white;
+                margin-block: 50px;
+                padding-block: 10px;
+                text-align: center;
+            }
+            .quest{
+                height: 50px;
+                width: 280px;
+                border: none;
+                padding-inline: 20px;
+                border-width: 2px;
+                margin: 35px;
+                background-color: rgb(230, 230, 230);
+                border-radius:10px;
+                display: block;
+                align-items: center;
+                text-align: center;
+                
+                
+            }
+            ::placeholder {
+                
+            }
+            .details-box{
+                background-color:rgb(46, 45, 45);
+                height: 500px;
+                border-radius: 15px;
+                width: 500px;
+                margin: 40px;
+                padding-left: 50px;
+                align-items:center;
+                
+            }
+            .head{
+                text-align: center;
+            }
+           .btn{
+                color: white;
+                background-color: rgb(38, 125, 224);
+                border-radius: 10px;
+                margin-left: 150px ;
+           }
+            
+        </style>
+        <script>
+            function getinputs() {
+                var rank = document.getElementById('keam-rank').value;
+                var course = document.getElementById('course').value;
+                var location = document.getElementById('location').value;
+                location.href="output.html";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="d-flex flex-row justify-content-end">
+            <div class="white-box">
+                <h2 class="head">Cypher</h2>
+                <h3 class="head">College recommender</h3>
+                <div class="details-box">
+                   
+                    <h2 class="heading">
+                        "We help you to find your desired college"
+                    </h2>
+                   
+                    <input type="text" id="keam-rank" class="quest" placeholder="Enter your keam rank">
+                    <input type="text" id="course" class="quest" placeholder="Enter your preferred course(%)">
+                    <input type="text" id="location" class="quest" placeholder="Enter your preferred location">
+                    <form action="/output.html">
+                        <button onclick="getinputs()"  class="btn"> Submit </button>
+                    </form>
+                   
+                </div>
+            </div>
+            <div class="background">
+                
+            </div>
+        </div>
+       
+    </body>
+</html>
